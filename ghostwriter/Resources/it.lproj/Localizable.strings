@@ -10,6 +10,7 @@
 "action_insert" = "Inserisci";
 "action_close" = "Chiudi";
 "action_settings" = "Preferenze (prefs.toml)";
+"action_launch_at_login" = "Apri al login";
 "action_swap_languages" = "Scambia lingue";
 "action_swap_unavailable" = "Scambio non disponibile";
 "action_grant_permission" = "Consenti / Apri Impostazioni di Sistema";

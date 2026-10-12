@@ -119,6 +119,16 @@ final class AppSettings {
         }
     }
 
+    var launchAtLogin: Bool {
+        didSet {
+            defaults.set(launchAtLogin, forKey: "launchAtLogin")
+            if !isSyncing {
+                PreferencesManager.shared.updateKey(key: "launch_at_login", value: launchAtLogin ? "true" : "false", isString: false)
+            }
+            LaunchAtLoginManager.shared.setEnabled(launchAtLogin)
+        }
+    }
+
     /// User-overridden binary path for a provider, trimmed; empty means auto-detect.
     func configuredBinaryPath(for provider: AIProvider) -> String {
         switch provider {
@@ -155,6 +165,14 @@ final class AppSettings {
         } else {
             self.autoPaste = true
         }
+
+        if defaults.object(forKey: "launchAtLogin") != nil {
+            self.launchAtLogin = defaults.bool(forKey: "launchAtLogin")
+        } else {
+            // No stored preference yet: adopt the OS login-item state so the
+            // menu reflects reality (e.g. enabled manually via System Settings).
+            self.launchAtLogin = LaunchAtLoginManager.shared.isEnabled
+        }
         
         // Sync initial state from prefs.toml
         reloadFromDisk()
@@ -181,6 +199,12 @@ final class AppSettings {
         sync(prefs["target_language"].flatMap(Language.init(rawValue:)) ?? .en_US, to: \.targetLanguage)
         sync(prefs["tone"].flatMap(LanguageTone.init(rawValue:)) ?? .formal, to: \.selectedTone)
         sync(prefs["auto_paste"].map { $0.lowercased() == "true" } ?? true, to: \.autoPaste)
+        // Unlike other keys, an absent launch_at_login keeps the current value
+        // (adopted from the OS registration state): deleting the line must not
+        // silently unregister a login item the user enabled in System Settings.
+        if let raw = prefs["launch_at_login"] {
+            sync(raw.lowercased() == "true", to: \.launchAtLogin)
+        }
         sync(prefs["agy_path"] ?? "", to: \.agyPath)
         sync(prefs["claude_path"] ?? "", to: \.claudePath)
         sync(prefs["opencode_path"] ?? "", to: \.opencodePath)

@@ -10,6 +10,7 @@
 "action_insert" = "Inserir";
 "action_close" = "Fechar";
 "action_settings" = "Preferências (prefs.toml)";
+"action_launch_at_login" = "Abrir ao Iniciar Sessão";
 "action_swap_languages" = "Trocar idiomas";
 "action_swap_unavailable" = "Troca indisponível";
 "action_grant_permission" = "Autorizar / Abrir Definições do Sistema";

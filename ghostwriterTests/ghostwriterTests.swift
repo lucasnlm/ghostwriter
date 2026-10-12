@@ -101,6 +101,35 @@ final class ghostwriterTests: XCTestCase {
         XCTAssertEqual(settings.targetLanguage, .en_US, "An absent TOML key must revert to its default, not keep the stale UserDefaults value")
     }
 
+    func testLaunchAtLoginTOMLRoundTripAndAbsentKeyKeepsState() throws {
+        let settings = AppSettings.shared
+        let original = settings.launchAtLogin
+        defer { settings.launchAtLogin = original }
+
+        // Menu-style toggle persists to prefs.toml as a bare boolean
+        settings.launchAtLogin = true
+        XCTAssertEqual(PreferencesManager.shared.readPreferences()["launch_at_login"], "true")
+
+        settings.launchAtLogin = false
+        XCTAssertEqual(PreferencesManager.shared.readPreferences()["launch_at_login"], "false")
+
+        // Hand-edited file value applies on reload (live file watching path)
+        PreferencesManager.shared.updateKey(key: "launch_at_login", value: "true", isString: false)
+        settings.reloadFromDisk()
+        XCTAssertTrue(settings.launchAtLogin)
+
+        // Unlike other keys, deleting launch_at_login keeps the current state:
+        // it must not silently unregister a login item enabled via System Settings.
+        let fileURL = PreferencesManager.fileURL
+        let content = try String(contentsOf: fileURL, encoding: .utf8)
+        let withoutKey = content.components(separatedBy: .newlines)
+            .filter { !$0.trimmingCharacters(in: .whitespaces).hasPrefix("launch_at_login") }
+        try withoutKey.joined(separator: "\n").write(to: fileURL, atomically: true, encoding: .utf8)
+
+        settings.reloadFromDisk()
+        XCTAssertTrue(settings.launchAtLogin, "An absent launch_at_login key must keep the current state")
+    }
+
     func testTextImprovementPromptWhenSameLanguage() throws {
         let prompt = AITranslationService.buildPrompt(
             text: "nois vai na praia amanha",
@@ -433,6 +462,7 @@ final class ghostwriterTests: XCTestCase {
         XCTAssertTrue(content.contains("provider"))
         XCTAssertTrue(content.contains("source_language"))
         XCTAssertTrue(content.contains("target_language"))
+        XCTAssertTrue(content.contains("launch_at_login"))
     }
 
     func testHotKeyShortcutParsing() throws {

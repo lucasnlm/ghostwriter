@@ -27,6 +27,7 @@ enum AppStrings {
     enum Actions {
         static var close: String { localized("action_close") }
         static var settings: String { localized("action_settings") }
+        static var launchAtLogin: String { localized("action_launch_at_login") }
         static var swapLanguages: String { localized("action_swap_languages") }
         static var swapUnavailable: String { localized("action_swap_unavailable") }
         static var quit: String { localized("action_quit") }

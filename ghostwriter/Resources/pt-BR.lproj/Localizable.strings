@@ -13,6 +13,7 @@
 /* Action shortcuts */
 "action_close" = "Fechar";
 "action_settings" = "Preferências (prefs.toml)";
+"action_launch_at_login" = "Abrir ao Iniciar Sessão";
 "action_swap_languages" = "Inverter idiomas";
 "action_swap_unavailable" = "Inversão indisponível";
 "action_quit" = "Encerrar Ghostwriter";

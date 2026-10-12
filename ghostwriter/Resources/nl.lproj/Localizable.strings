@@ -10,6 +10,7 @@
 "action_insert" = "Invoegen";
 "action_close" = "Sluiten";
 "action_settings" = "Voorkeuren (prefs.toml)";
+"action_launch_at_login" = "Openen bij inloggen";
 "action_swap_languages" = "Talen wisselen";
 "action_swap_unavailable" = "Wisselen niet beschikbaar";
 "action_grant_permission" = "Toestaan / Systeeminstellingen openen";

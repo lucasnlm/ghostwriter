@@ -109,7 +109,8 @@ Once completed (via `Command + Return` / `⌘⏎`), Ghostwriter automatically in
 ### 7. State & Preferences (`@Observable` & `prefs.toml`)
 - Uses modern Swift Observation (`@Observable` from `import Observation`).
 - **Do not use `Combine`, `ObservableObject`, or `@Published`**; the codebase uses modern `@Observable` and `@Bindable` to prevent Swift 6 member-import visibility conflicts.
-- User preferences (`provider`, `source_language`, `target_language`, `tone`, `auto_paste`, CLI paths) are managed via `~/.config/ghostwriter/prefs.toml`, which is the **source of truth**: keys absent from the file revert to their defaults (deleting a line takes effect). `UserDefaults` is only a fallback when the file is unreadable. Set the `GHOSTWRITER_CONFIG_DIR` environment variable to redirect the config directory (used by the test suite for isolation).
+- User preferences (`provider`, `source_language`, `target_language`, `tone`, `auto_paste`, `launch_at_login`, CLI paths) are managed via `~/.config/ghostwriter/prefs.toml`, which is the **source of truth**: keys absent from the file revert to their defaults (deleting a line takes effect). `UserDefaults` is only a fallback when the file is unreadable. Set the `GHOSTWRITER_CONFIG_DIR` environment variable to redirect the config directory (used by the test suite for isolation).
+- **`launch_at_login`** is the one exception to the absent-key rule: it is applied via `SMAppService` (`LaunchAtLoginManager`), and an absent key leaves the OS registration untouched (so deleting the line never silently unregisters a login item enabled in System Settings). It is toggled from the menu bar item, whose checkmark is refreshed in `MenuBarManager.menuNeedsUpdate`. `LaunchAtLoginManager.setEnabled` is a no-op under XCTest so tests never touch the real login items.
 - Clicking the gear icon or menu bar item opens `prefs.toml` directly in the user's text editor. Live file watching via `DispatchSource` reloads preferences automatically upon saving.
 
 ### 8. Localization & Strings (`AppStrings.swift` & `Localizable.strings`)
@@ -146,7 +147,8 @@ ghostwriter/
 │   │   ├── CaretLocator.swift           # Accessibility text cursor bounds locator
 │   │   ├── FloatingWindowManager.swift  # Floating panel lifecycle & caret anchoring
 │   │   ├── HotKeyManager.swift          # Global ⌃⌘G Carbon event hotkey
-│   │   ├── MenuBarManager.swift         # Status bar menu item (show, settings, quit)
+│   │   ├── LaunchAtLoginManager.swift   # SMAppService login-item registration
+│   │   ├── MenuBarManager.swift         # Status bar menu item (show, settings, launch at login, quit)
 │   │   ├── PreferencesManager.swift     # TOML preferences file manager (~/.config/ghostwriter/prefs.toml)
 │   │   ├── TextInserter.swift           # Clipboard management & synthetic ⌘V keystrokes
 │   │   └── TranslationService.swift     # Core protocol & error definitions

@@ -10,6 +10,7 @@
 "action_insert" = "삽입";
 "action_close" = "닫기";
 "action_settings" = "환경설정 (prefs.toml)";
+"action_launch_at_login" = "로그인 시 열기";
 "action_swap_languages" = "언어 전환";
 "action_swap_unavailable" = "전환할 수 없음";
 "action_grant_permission" = "허용 / 시스템 설정 열기";

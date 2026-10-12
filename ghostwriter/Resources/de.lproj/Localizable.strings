@@ -10,6 +10,7 @@
 "action_insert" = "Einfügen";
 "action_close" = "Schließen";
 "action_settings" = "Einstellungen (prefs.toml)";
+"action_launch_at_login" = "Beim Anmelden öffnen";
 "action_swap_languages" = "Sprachen tauschen";
 "action_swap_unavailable" = "Tauschen nicht verfügbar";
 "action_grant_permission" = "Zugriff gewähren / Systemeinstellungen öffnen";

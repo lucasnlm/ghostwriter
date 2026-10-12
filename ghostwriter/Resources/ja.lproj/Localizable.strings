@@ -10,6 +10,7 @@
 "action_insert" = "挿入";
 "action_close" = "閉じる";
 "action_settings" = "環境設定（prefs.toml）";
+"action_launch_at_login" = "ログイン時に開く";
 "action_swap_languages" = "言語を入れ替え";
 "action_swap_unavailable" = "入れ替えできません";
 "action_grant_permission" = "許可 / システム設定を開く";

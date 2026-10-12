@@ -10,6 +10,7 @@
 "action_insert" = "插入";
 "action_close" = "关闭";
 "action_settings" = "偏好设置（prefs.toml）";
+"action_launch_at_login" = "登录时打开";
 "action_swap_languages" = "交换语言";
 "action_swap_unavailable" = "无法交换";
 "action_grant_permission" = "授权 / 打开系统设置";

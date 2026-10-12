@@ -10,6 +10,7 @@
 "action_insert" = "Вставить";
 "action_close" = "Закрыть";
 "action_settings" = "Настройки (prefs.toml)";
+"action_launch_at_login" = "Открывать при входе в систему";
 "action_swap_languages" = "Поменять языки";
 "action_swap_unavailable" = "Замена недоступна";
 "action_grant_permission" = "Разрешить / Открыть Системные настройки";

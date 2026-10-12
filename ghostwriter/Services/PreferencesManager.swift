@@ -208,6 +208,10 @@ final class PreferencesManager {
         # Automatically paste translated/improved text into active app (true / false)
         auto_paste = true
 
+        # Launch Ghostwriter automatically when you log in (true / false)
+        # (also toggleable from the menu bar icon)
+        launch_at_login = false
+
         # Optional binary paths (uncomment if tools are installed in custom locations)
         # agy_path = "/usr/local/bin/agy"
         # claude_path = "/usr/local/bin/claude"
