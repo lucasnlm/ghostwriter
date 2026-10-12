@@ -1,0 +1,78 @@
+/*
+  Localizable.strings (pt-BR)
+  ghostwriter
+*/
+
+/* General */
+"app_name" = "Ghostwriter";
+
+/* Keyboard key caps (locale-neutral glyphs) */
+"key_command_return" = "⌘⏎";
+"key_escape" = "Esc";
+
+/* Action shortcuts */
+"action_close" = "Fechar";
+"action_settings" = "Preferências (prefs.toml)";
+"action_swap_languages" = "Inverter idiomas";
+"action_swap_unavailable" = "Inversão indisponível";
+"action_quit" = "Encerrar Ghostwriter";
+"action_show_window" = "Exibir Ghostwriter (%@)";
+"action_show_window_unavailable" = "Exibir Ghostwriter (%@) — atalho indisponível";
+
+/* Dynamic Actions */
+"action_translate_and_insert" = "Traduzir e Inserir";
+"action_improve_and_insert" = "Melhorar e Inserir";
+"action_write_and_insert" = "Escrever e Inserir";
+
+/* Prompt Mode */
+"action_prompt_mode" = "Prompt";
+"action_prompt_mode_help" = "Trata a entrada como uma instrução e escreve o resultado no idioma de destino (⌘P)";
+"placeholder_prompt" = "Descreva o que escrever...";
+"status_generating" = "Escrevendo em %@...";
+
+/* Placeholders */
+"placeholder_translate" = "Digite em %@ ou qualquer idioma...";
+"placeholder_improve" = "Digite ou cole o texto para melhorar em %@...";
+"placeholder_shortcut_hint" = "Enter para nova linha, ⌘⏎ para inserir";
+
+/* Statuses */
+"status_translating" = "Traduzindo para %@...";
+"status_improving" = "Melhorando texto em %@...";
+
+/* Languages */
+"lang_auto" = "Detectar automaticamente";
+"lang_pt_br" = "Português (Brasil)";
+"lang_pt_pt" = "Português (Portugal)";
+"lang_en_us" = "Inglês (EUA)";
+"lang_en_gb" = "Inglês (Reino Unido)";
+"lang_es_es" = "Espanhol (Espanha)";
+"lang_es_la" = "Espanhol (América Latina)";
+"lang_fr_fr" = "Francês (França)";
+"lang_fr_ca" = "Francês (Canadá)";
+"lang_de_de" = "Alemão";
+"lang_it_it" = "Italiano";
+"lang_ja_jp" = "Japonês";
+"lang_zh_cn" = "Chinês (Simplificado)";
+"lang_zh_tw" = "Chinês (Tradicional)";
+"lang_ru_ru" = "Russo";
+"lang_ko_ko" = "Coreano";
+"lang_nl_nl" = "Holandês";
+
+/* Language Tones */
+"tone_formal" = "Formal";
+"tone_informal" = "Informal";
+"tone_concise" = "Conciso e Direto";
+"tone_friendly" = "Amigável";
+"tone_academic" = "Acadêmico e Técnico";
+
+/* CLI Providers */
+"provider_agy" = "Antigravity (agy)";
+"provider_claude" = "Claude (claude)";
+"provider_opencode" = "OpenCode (opencode)";
+"provider_custom" = "CLI Personalizado";
+
+/* Errors */
+"error_cli_not_found" = "Comando '%@' não encontrado. Instale-o ou configure o caminho nos Ajustes.";
+"error_cli_execution_failed" = "Falha na execução do CLI: %@";
+"error_empty_response" = "O CLI retornou uma resposta vazia.";
+"error_timeout" = "O CLI demorou demais e foi interrompido.";

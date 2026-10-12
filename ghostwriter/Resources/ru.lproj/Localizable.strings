@@ -1,0 +1,98 @@
+/*
+  Localizable.strings (ru)
+  ghostwriter
+*/
+
+/* General */
+"app_name" = "Ghostwriter";
+
+/* Action shortcuts */
+"action_insert" = "Вставить";
+"action_close" = "Закрыть";
+"action_settings" = "Настройки (prefs.toml)";
+"action_swap_languages" = "Поменять языки";
+"action_swap_unavailable" = "Замена недоступна";
+"action_grant_permission" = "Разрешить / Открыть Системные настройки";
+"action_quit" = "Завершить Ghostwriter";
+"action_show_window" = "Показать Ghostwriter (%@)";
+
+/* Dynamic Actions */
+"action_translate_and_insert" = "Перевести и вставить";
+"action_improve_and_insert" = "Улучшить и вставить";
+"action_write_and_insert" = "Написать и вставить";
+
+/* Prompt Mode */
+"action_prompt_mode" = "Промпт";
+"action_prompt_mode_help" = "Обрабатывает ввод как инструкцию и пишет результат на целевом языке (⌘P)";
+"placeholder_prompt" = "Опишите, что нужно написать...";
+"status_generating" = "Пишу на %@...";
+
+/* Placeholders */
+"placeholder_translate" = "Пишите на %@ или любом другом языке...";
+"placeholder_improve" = "Введите или вставьте текст для улучшения на %@...";
+"placeholder_shortcut_hint" = "Return — новая строка, ⌘⏎ — вставить";
+
+/* Statuses */
+"status_translating" = "Перевод на %@...";
+"status_improving" = "Улучшение текста на %@...";
+
+/* Languages */
+"lang_auto" = "Автоопределение";
+"lang_pt_br" = "Португальский (Бразилия)";
+"lang_pt_pt" = "Португальский (Португалия)";
+"lang_en_us" = "Английский (США)";
+"lang_en_gb" = "Английский (Великобритания)";
+"lang_es_es" = "Испанский (Испания)";
+"lang_es_la" = "Испанский (Латинская Америка)";
+"lang_fr_fr" = "Французский (Франция)";
+"lang_fr_ca" = "Французский (Канада)";
+"lang_de_de" = "Немецкий";
+"lang_it_it" = "Итальянский";
+"lang_ja_jp" = "Японский";
+"lang_zh_cn" = "Китайский (упрощённый)";
+"lang_zh_tw" = "Китайский (традиционный)";
+"lang_ru_ru" = "Русский";
+"lang_ko_ko" = "Корейский";
+"lang_nl_nl" = "Нидерландский";
+
+/* Language Tones */
+"tone_formal" = "Формальный";
+"tone_informal" = "Неформальный";
+"tone_concise" = "Лаконичный и прямой";
+"tone_friendly" = "Тёплый и дружелюбный";
+"tone_academic" = "Академический и технический";
+
+/* CLI Providers */
+"provider_agy" = "Antigravity (agy)";
+"provider_claude" = "Claude (claude)";
+"provider_opencode" = "OpenCode (opencode)";
+"provider_custom" = "Свой CLI";
+
+/* Settings Tabs & Titles */
+"tab_cli_tool" = "CLI-инструмент";
+"tab_defaults" = "По умолчанию";
+"tab_permissions" = "Разрешения";
+"section_default_selection" = "Выбор по умолчанию";
+"section_behavior" = "Поведение";
+"section_configuration" = "Настройка %@";
+"label_default_source" = "Исходный язык по умолчанию";
+"label_default_target" = "Целевой язык по умолчанию";
+"label_default_tone" = "Тон по умолчанию";
+"label_auto_paste" = "Автоматически вставлять в предыдущее приложение";
+"label_auto_paste_description" = "Если включено, Ghostwriter копирует переведённый текст в буфер обмена и имитирует ⌘V в активном приложении.";
+"label_global_hotkey" = "Глобальная горячая клавиша";
+"label_global_hotkey_description" = "Всегда активна во всех приложениях macOS";
+"label_accessibility_permission" = "Разрешение на универсальный доступ";
+"label_accessibility_description" = "Необходимо, чтобы Ghostwriter мог автоматически вставлять переведённый текст в другие приложения.";
+"label_permission_granted" = "Разрешение предоставлено";
+"label_permission_required" = "Требуется разрешение";
+"label_binary_path" = "Путь к исполняемому файлу";
+"label_arguments" = "Аргументы ({prompt} будет заменён)";
+"label_custom_path_override" = "Свой путь (необязательно)";
+"label_detected_path" = "Найдено: %@";
+"label_cli_not_found" = "«%@» не найден автоматически в PATH";
+
+/* Errors */
+"error_cli_not_found" = "Команда «%@» не найдена. Установите её или укажите полный путь в настройках.";
+"error_cli_execution_failed" = "Сбой выполнения CLI: %@";
+"error_empty_response" = "CLI вернул пустой ответ.";

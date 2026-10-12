@@ -1,0 +1,98 @@
+/*
+  Localizable.strings (ja)
+  ghostwriter
+*/
+
+/* General */
+"app_name" = "Ghostwriter";
+
+/* Action shortcuts */
+"action_insert" = "挿入";
+"action_close" = "閉じる";
+"action_settings" = "環境設定（prefs.toml）";
+"action_swap_languages" = "言語を入れ替え";
+"action_swap_unavailable" = "入れ替えできません";
+"action_grant_permission" = "許可 / システム設定を開く";
+"action_quit" = "Ghostwriterを終了";
+"action_show_window" = "Ghostwriterを表示（%@）";
+
+/* Dynamic Actions */
+"action_translate_and_insert" = "翻訳して挿入";
+"action_improve_and_insert" = "推敲して挿入";
+"action_write_and_insert" = "作成して挿入";
+
+/* Prompt Mode */
+"action_prompt_mode" = "プロンプト";
+"action_prompt_mode_help" = "入力を指示として扱い、対象言語で結果を書きます (⌘P)";
+"placeholder_prompt" = "書きたい内容を説明してください...";
+"status_generating" = "%@で作成中...";
+
+/* Placeholders */
+"placeholder_translate" = "%@または任意の言語で入力...";
+"placeholder_improve" = "%@で改善したいテキストを入力またはペースト...";
+"placeholder_shortcut_hint" = "Returnで改行、⌘⏎で挿入";
+
+/* Statuses */
+"status_translating" = "%@に翻訳中...";
+"status_improving" = "%@でテキストを改善中...";
+
+/* Languages */
+"lang_auto" = "自動検出";
+"lang_pt_br" = "ポルトガル語（ブラジル）";
+"lang_pt_pt" = "ポルトガル語（ポルトガル）";
+"lang_en_us" = "英語（米国）";
+"lang_en_gb" = "英語（英国）";
+"lang_es_es" = "スペイン語（スペイン）";
+"lang_es_la" = "スペイン語（ラテンアメリカ）";
+"lang_fr_fr" = "フランス語（フランス）";
+"lang_fr_ca" = "フランス語（カナダ）";
+"lang_de_de" = "ドイツ語";
+"lang_it_it" = "イタリア語";
+"lang_ja_jp" = "日本語";
+"lang_zh_cn" = "中国語（簡体字）";
+"lang_zh_tw" = "中国語（繁体字）";
+"lang_ru_ru" = "ロシア語";
+"lang_ko_ko" = "韓国語";
+"lang_nl_nl" = "オランダ語";
+
+/* Language Tones */
+"tone_formal" = "フォーマル";
+"tone_informal" = "カジュアル";
+"tone_concise" = "簡潔で率直";
+"tone_friendly" = "温かく親しみやすい";
+"tone_academic" = "学術的・技術的";
+
+/* CLI Providers */
+"provider_agy" = "Antigravity (agy)";
+"provider_claude" = "Claude (claude)";
+"provider_opencode" = "OpenCode (opencode)";
+"provider_custom" = "カスタムCLI";
+
+/* Settings Tabs & Titles */
+"tab_cli_tool" = "CLIツール";
+"tab_defaults" = "デフォルト";
+"tab_permissions" = "権限";
+"section_default_selection" = "デフォルト選択";
+"section_behavior" = "動作";
+"section_configuration" = "%@の構成";
+"label_default_source" = "デフォルトの変換元言語";
+"label_default_target" = "デフォルトの変換先言語";
+"label_default_tone" = "デフォルトのトーン";
+"label_auto_paste" = "前のアプリに自動でペースト";
+"label_auto_paste_description" = "有効にすると、Ghostwriterは翻訳テキストをクリップボードにコピーし、最前面のアプリで⌘Vをシミュレートします。";
+"label_global_hotkey" = "グローバルホットキー";
+"label_global_hotkey_description" = "macOSのすべてのアプリで常に有効";
+"label_accessibility_permission" = "アクセシビリティ権限";
+"label_accessibility_description" = "Ghostwriterが翻訳テキストを他のアプリに自動でペーストするために必要です。";
+"label_permission_granted" = "権限が付与されました";
+"label_permission_required" = "権限が必要です";
+"label_binary_path" = "バイナリのパス";
+"label_arguments" = "引数（{prompt}は置き換えられます）";
+"label_custom_path_override" = "カスタムパス（任意）";
+"label_detected_path" = "検出: %@";
+"label_cli_not_found" = "'%@'はPATHで自動検出されませんでした";
+
+/* Errors */
+"error_cli_not_found" = "コマンド'%@'が見つかりません。インストールするか、設定でフルパスを指定してください。";
+"error_cli_execution_failed" = "CLIの実行に失敗しました: %@";
+"error_empty_response" = "CLIが空の応答を返しました。";

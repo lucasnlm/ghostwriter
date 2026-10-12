@@ -1,0 +1,98 @@
+/*
+  Localizable.strings (zh-Hant)
+  ghostwriter
+*/
+
+/* General */
+"app_name" = "Ghostwriter";
+
+/* Action shortcuts */
+"action_insert" = "插入";
+"action_close" = "關閉";
+"action_settings" = "偏好設定（prefs.toml）";
+"action_swap_languages" = "交換語言";
+"action_swap_unavailable" = "無法交換";
+"action_grant_permission" = "授權 / 開啟系統設定";
+"action_quit" = "結束 Ghostwriter";
+"action_show_window" = "顯示 Ghostwriter（%@）";
+
+/* Dynamic Actions */
+"action_translate_and_insert" = "翻譯並插入";
+"action_improve_and_insert" = "潤飾並插入";
+"action_write_and_insert" = "撰寫並插入";
+
+/* Prompt Mode */
+"action_prompt_mode" = "提示詞";
+"action_prompt_mode_help" = "將輸入視為指令，並以目標語言寫出結果 (⌘P)";
+"placeholder_prompt" = "描述要撰寫的內容...";
+"status_generating" = "正在以%@撰寫...";
+
+/* Placeholders */
+"placeholder_translate" = "以%@或任何語言輸入...";
+"placeholder_improve" = "輸入或貼上要以%@改進的文字...";
+"placeholder_shortcut_hint" = "按 Return 換行，按 ⌘⏎ 插入";
+
+/* Statuses */
+"status_translating" = "正在翻譯為%@...";
+"status_improving" = "正在以%@改進文字...";
+
+/* Languages */
+"lang_auto" = "自動偵測";
+"lang_pt_br" = "葡萄牙文（巴西）";
+"lang_pt_pt" = "葡萄牙文（葡萄牙）";
+"lang_en_us" = "英文（美國）";
+"lang_en_gb" = "英文（英國）";
+"lang_es_es" = "西班牙文（西班牙）";
+"lang_es_la" = "西班牙文（拉丁美洲）";
+"lang_fr_fr" = "法文（法國）";
+"lang_fr_ca" = "法文（加拿大）";
+"lang_de_de" = "德文";
+"lang_it_it" = "義大利文";
+"lang_ja_jp" = "日文";
+"lang_zh_cn" = "中文（簡體）";
+"lang_zh_tw" = "中文（繁體）";
+"lang_ru_ru" = "俄文";
+"lang_ko_ko" = "韓文";
+"lang_nl_nl" = "荷蘭文";
+
+/* Language Tones */
+"tone_formal" = "正式";
+"tone_informal" = "非正式";
+"tone_concise" = "簡潔直接";
+"tone_friendly" = "溫暖友善";
+"tone_academic" = "學術與技術";
+
+/* CLI Providers */
+"provider_agy" = "Antigravity (agy)";
+"provider_claude" = "Claude (claude)";
+"provider_opencode" = "OpenCode (opencode)";
+"provider_custom" = "自訂 CLI";
+
+/* Settings Tabs & Titles */
+"tab_cli_tool" = "CLI 工具";
+"tab_defaults" = "預設";
+"tab_permissions" = "權限";
+"section_default_selection" = "預設選擇";
+"section_behavior" = "行為";
+"section_configuration" = "%@ 組態";
+"label_default_source" = "預設來源語言";
+"label_default_target" = "預設目標語言";
+"label_default_tone" = "預設語氣";
+"label_auto_paste" = "自動貼上到先前的應用程式";
+"label_auto_paste_description" = "啟用後，Ghostwriter 會將譯文拷貝到剪貼簿，並在最前方的應用程式中模擬 ⌘V。";
+"label_global_hotkey" = "全域快捷鍵";
+"label_global_hotkey_description" = "在所有 macOS 應用程式中一律啟用";
+"label_accessibility_permission" = "輔助使用權限";
+"label_accessibility_description" = "Ghostwriter 需要此權限才能將譯文自動貼上到其他應用程式。";
+"label_permission_granted" = "已授權";
+"label_permission_required" = "需要授權";
+"label_binary_path" = "執行檔路徑";
+"label_arguments" = "參數（{prompt} 將被取代）";
+"label_custom_path_override" = "自訂路徑（可選）";
+"label_detected_path" = "偵測到：%@";
+"label_cli_not_found" = "無法在 PATH 中自動找到「%@」";
+
+/* Errors */
+"error_cli_not_found" = "找不到指令「%@」。請安裝它或在設定中設定完整路徑。";
+"error_cli_execution_failed" = "CLI 執行失敗：%@";
+"error_empty_response" = "CLI 傳回了空白結果。";

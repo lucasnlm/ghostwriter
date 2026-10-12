@@ -1,0 +1,78 @@
+/*
+  Localizable.strings
+  ghostwriter
+*/
+
+/* General */
+"app_name" = "Ghostwriter";
+
+/* Keyboard key caps (locale-neutral glyphs) */
+"key_command_return" = "⌘⏎";
+"key_escape" = "Esc";
+
+/* Action shortcuts */
+"action_close" = "Close";
+"action_settings" = "Preferences (prefs.toml)";
+"action_swap_languages" = "Swap languages";
+"action_swap_unavailable" = "Swap unavailable";
+"action_quit" = "Quit Ghostwriter";
+"action_show_window" = "Show Ghostwriter (%@)";
+"action_show_window_unavailable" = "Show Ghostwriter (%@) — hotkey unavailable";
+
+/* Dynamic Actions */
+"action_translate_and_insert" = "Translate & Insert";
+"action_improve_and_insert" = "Improve & Insert";
+"action_write_and_insert" = "Write & Insert";
+
+/* Prompt Mode */
+"action_prompt_mode" = "Prompt";
+"action_prompt_mode_help" = "Treat the input as an instruction and write the result in the target language (⌘P)";
+"placeholder_prompt" = "Describe what to write...";
+"status_generating" = "Writing in %@...";
+
+/* Placeholders */
+"placeholder_translate" = "Type in %@ or any language...";
+"placeholder_improve" = "Type or paste text to improve in %@...";
+"placeholder_shortcut_hint" = "Press Return for new line, ⌘⏎ to insert";
+
+/* Statuses */
+"status_translating" = "Translating to %@...";
+"status_improving" = "Improving text in %@...";
+
+/* Languages */
+"lang_auto" = "Auto-Detect";
+"lang_pt_br" = "Portuguese (BR)";
+"lang_pt_pt" = "Portuguese (PT)";
+"lang_en_us" = "English (US)";
+"lang_en_gb" = "English (UK)";
+"lang_es_es" = "Spanish (ES)";
+"lang_es_la" = "Spanish (LatAm)";
+"lang_fr_fr" = "French (FR)";
+"lang_fr_ca" = "French (CA)";
+"lang_de_de" = "German (DE)";
+"lang_it_it" = "Italian";
+"lang_ja_jp" = "Japanese";
+"lang_zh_cn" = "Chinese (Simplified)";
+"lang_zh_tw" = "Chinese (Traditional)";
+"lang_ru_ru" = "Russian";
+"lang_ko_ko" = "Korean";
+"lang_nl_nl" = "Dutch";
+
+/* Language Tones */
+"tone_formal" = "Formal";
+"tone_informal" = "Informal";
+"tone_concise" = "Concise & Direct";
+"tone_friendly" = "Warm & Friendly";
+"tone_academic" = "Academic & Technical";
+
+/* CLI Providers */
+"provider_agy" = "Antigravity (agy)";
+"provider_claude" = "Claude (claude)";
+"provider_opencode" = "OpenCode (opencode)";
+"provider_custom" = "Custom CLI";
+
+/* Errors */
+"error_cli_not_found" = "Command '%@' was not found. Please install it or set its full path in Settings.";
+"error_cli_execution_failed" = "CLI execution failed: %@";
+"error_empty_response" = "CLI returned an empty translation.";
+"error_timeout" = "The CLI took too long and was stopped.";

@@ -1,0 +1,98 @@
+/*
+  Localizable.strings (nl)
+  ghostwriter
+*/
+
+/* General */
+"app_name" = "Ghostwriter";
+
+/* Action shortcuts */
+"action_insert" = "Invoegen";
+"action_close" = "Sluiten";
+"action_settings" = "Voorkeuren (prefs.toml)";
+"action_swap_languages" = "Talen wisselen";
+"action_swap_unavailable" = "Wisselen niet beschikbaar";
+"action_grant_permission" = "Toestaan / Systeeminstellingen openen";
+"action_quit" = "Ghostwriter afsluiten";
+"action_show_window" = "Ghostwriter tonen (%@)";
+
+/* Dynamic Actions */
+"action_translate_and_insert" = "Vertalen & invoegen";
+"action_improve_and_insert" = "Verbeteren & invoegen";
+"action_write_and_insert" = "Schrijven & invoegen";
+
+/* Prompt Mode */
+"action_prompt_mode" = "Prompt";
+"action_prompt_mode_help" = "Behandelt de invoer als een instructie en schrijft het resultaat in de doeltaal (⌘P)";
+"placeholder_prompt" = "Beschrijf wat er geschreven moet worden...";
+"status_generating" = "Schrijven in %@...";
+
+/* Placeholders */
+"placeholder_translate" = "Typ in %@ of een andere taal...";
+"placeholder_improve" = "Typ of plak de tekst om te verbeteren in %@...";
+"placeholder_shortcut_hint" = "Return voor een nieuwe regel, ⌘⏎ om in te voegen";
+
+/* Statuses */
+"status_translating" = "Vertalen naar %@...";
+"status_improving" = "Tekst verbeteren in %@...";
+
+/* Languages */
+"lang_auto" = "Automatisch detecteren";
+"lang_pt_br" = "Portugees (Brazilië)";
+"lang_pt_pt" = "Portugees (Portugal)";
+"lang_en_us" = "Engels (VS)";
+"lang_en_gb" = "Engels (VK)";
+"lang_es_es" = "Spaans (Spanje)";
+"lang_es_la" = "Spaans (Latijns-Amerika)";
+"lang_fr_fr" = "Frans (Frankrijk)";
+"lang_fr_ca" = "Frans (Canada)";
+"lang_de_de" = "Duits";
+"lang_it_it" = "Italiaans";
+"lang_ja_jp" = "Japans";
+"lang_zh_cn" = "Chinees (vereenvoudigd)";
+"lang_zh_tw" = "Chinees (traditioneel)";
+"lang_ru_ru" = "Russisch";
+"lang_ko_ko" = "Koreaans";
+"lang_nl_nl" = "Nederlands";
+
+/* Language Tones */
+"tone_formal" = "Formeel";
+"tone_informal" = "Informeel";
+"tone_concise" = "Beknopt & direct";
+"tone_friendly" = "Warm & vriendelijk";
+"tone_academic" = "Academisch & technisch";
+
+/* CLI Providers */
+"provider_agy" = "Antigravity (agy)";
+"provider_claude" = "Claude (claude)";
+"provider_opencode" = "OpenCode (opencode)";
+"provider_custom" = "Aangepaste CLI";
+
+/* Settings Tabs & Titles */
+"tab_cli_tool" = "CLI-tool";
+"tab_defaults" = "Standaardinstellingen";
+"tab_permissions" = "Toestemmingen";
+"section_default_selection" = "Standaardselectie";
+"section_behavior" = "Gedrag";
+"section_configuration" = "Configuratie van %@";
+"label_default_source" = "Standaardbrontaal";
+"label_default_target" = "Standaarddoeltaal";
+"label_default_tone" = "Standaardtoon";
+"label_auto_paste" = "Automatisch plakken in vorige app";
+"label_auto_paste_description" = "Indien ingeschakeld, kopieert Ghostwriter de vertaalde tekst naar het klembord en simuleert ⌘V in de app op de voorgrond.";
+"label_global_hotkey" = "Algemene sneltoets";
+"label_global_hotkey_description" = "Altijd actief in alle macOS-apps";
+"label_accessibility_permission" = "Toegankelijkheidsmachtiging";
+"label_accessibility_description" = "Nodig zodat Ghostwriter de vertaalde tekst automatisch in andere apps kan plakken.";
+"label_permission_granted" = "Toestemming verleend";
+"label_permission_required" = "Toestemming vereist";
+"label_binary_path" = "Pad naar uitvoerbaar bestand";
+"label_arguments" = "Argumenten ({prompt} wordt vervangen)";
+"label_custom_path_override" = "Aangepast pad (optioneel)";
+"label_detected_path" = "Gevonden: %@";
+"label_cli_not_found" = "'%@' niet automatisch gevonden in PATH";
+
+/* Errors */
+"error_cli_not_found" = "Opdracht '%@' niet gevonden. Installeer deze of stel het volledige pad in via de Voorkeuren.";
+"error_cli_execution_failed" = "CLI-uitvoering mislukt: %@";
+"error_empty_response" = "De CLI gaf een leeg antwoord terug.";

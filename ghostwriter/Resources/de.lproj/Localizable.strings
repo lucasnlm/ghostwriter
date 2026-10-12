@@ -1,0 +1,98 @@
+/*
+  Localizable.strings (de)
+  ghostwriter
+*/
+
+/* General */
+"app_name" = "Ghostwriter";
+
+/* Action shortcuts */
+"action_insert" = "Einfügen";
+"action_close" = "Schließen";
+"action_settings" = "Einstellungen (prefs.toml)";
+"action_swap_languages" = "Sprachen tauschen";
+"action_swap_unavailable" = "Tauschen nicht verfügbar";
+"action_grant_permission" = "Zugriff gewähren / Systemeinstellungen öffnen";
+"action_quit" = "Ghostwriter beenden";
+"action_show_window" = "Ghostwriter anzeigen (%@)";
+
+/* Dynamic Actions */
+"action_translate_and_insert" = "Übersetzen & Einfügen";
+"action_improve_and_insert" = "Verbessern & Einfügen";
+"action_write_and_insert" = "Schreiben & Einfügen";
+
+/* Prompt Mode */
+"action_prompt_mode" = "Prompt";
+"action_prompt_mode_help" = "Behandelt die Eingabe als Anweisung und schreibt das Ergebnis in der Zielsprache (⌘P)";
+"placeholder_prompt" = "Beschreiben Sie, was geschrieben werden soll...";
+"status_generating" = "Wird in %@ geschrieben...";
+
+/* Placeholders */
+"placeholder_translate" = "Geben Sie Text in %@ oder einer beliebigen Sprache ein...";
+"placeholder_improve" = "Text zum Verbessern in %@ eingeben oder einfügen...";
+"placeholder_shortcut_hint" = "Return für eine neue Zeile, ⌘⏎ zum Einfügen";
+
+/* Statuses */
+"status_translating" = "Wird nach %@ übersetzt...";
+"status_improving" = "Text wird in %@ verbessert...";
+
+/* Languages */
+"lang_auto" = "Automatisch erkennen";
+"lang_pt_br" = "Portugiesisch (Brasilien)";
+"lang_pt_pt" = "Portugiesisch (Portugal)";
+"lang_en_us" = "Englisch (USA)";
+"lang_en_gb" = "Englisch (Großbritannien)";
+"lang_es_es" = "Spanisch (Spanien)";
+"lang_es_la" = "Spanisch (Lateinamerika)";
+"lang_fr_fr" = "Französisch (Frankreich)";
+"lang_fr_ca" = "Französisch (Kanada)";
+"lang_de_de" = "Deutsch";
+"lang_it_it" = "Italienisch";
+"lang_ja_jp" = "Japanisch";
+"lang_zh_cn" = "Chinesisch (vereinfacht)";
+"lang_zh_tw" = "Chinesisch (traditionell)";
+"lang_ru_ru" = "Russisch";
+"lang_ko_ko" = "Koreanisch";
+"lang_nl_nl" = "Niederländisch";
+
+/* Language Tones */
+"tone_formal" = "Formell";
+"tone_informal" = "Informell";
+"tone_concise" = "Prägnant & direkt";
+"tone_friendly" = "Herzlich & freundlich";
+"tone_academic" = "Akademisch & technisch";
+
+/* CLI Providers */
+"provider_agy" = "Antigravity (agy)";
+"provider_claude" = "Claude (claude)";
+"provider_opencode" = "OpenCode (opencode)";
+"provider_custom" = "Benutzerdefiniertes CLI";
+
+/* Settings Tabs & Titles */
+"tab_cli_tool" = "CLI-Tool";
+"tab_defaults" = "Standardwerte";
+"tab_permissions" = "Berechtigungen";
+"section_default_selection" = "Standardauswahl";
+"section_behavior" = "Verhalten";
+"section_configuration" = "Konfiguration von %@";
+"label_default_source" = "Standard-Quellsprache";
+"label_default_target" = "Standard-Zielsprache";
+"label_default_tone" = "Standard-Ton";
+"label_auto_paste" = "Automatisch in vorherige App einfügen";
+"label_auto_paste_description" = "Wenn aktiviert, kopiert Ghostwriter den übersetzten Text in die Zwischenablage und simuliert ⌘V in der vordersten App.";
+"label_global_hotkey" = "Globaler Tastenkürzel";
+"label_global_hotkey_description" = "Immer in allen macOS-Apps aktiv";
+"label_accessibility_permission" = "Zugriff für Bedienungshilfen";
+"label_accessibility_description" = "Erforderlich, damit Ghostwriter den übersetzten Text automatisch in andere Apps einfügen kann.";
+"label_permission_granted" = "Zugriff gewährt";
+"label_permission_required" = "Zugriff erforderlich";
+"label_binary_path" = "Pfad zur ausführbaren Datei";
+"label_arguments" = "Argumente ({prompt} wird ersetzt)";
+"label_custom_path_override" = "Benutzerdefinierter Pfad (optional)";
+"label_detected_path" = "Erkannt: %@";
+"label_cli_not_found" = "'%@' wurde nicht automatisch im PATH gefunden";
+
+/* Errors */
+"error_cli_not_found" = "Der Befehl '%@' wurde nicht gefunden. Bitte installieren Sie ihn oder legen Sie den vollständigen Pfad in den Einstellungen fest.";
+"error_cli_execution_failed" = "CLI-Ausführung fehlgeschlagen: %@";
+"error_empty_response" = "CLI hat eine leere Antwort zurückgegeben.";

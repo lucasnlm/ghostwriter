@@ -1,0 +1,98 @@
+/*
+  Localizable.strings (en-GB)
+  ghostwriter
+*/
+
+/* General */
+"app_name" = "Ghostwriter";
+
+/* Action shortcuts */
+"action_insert" = "Insert";
+"action_close" = "Close";
+"action_settings" = "Preferences (prefs.toml)";
+"action_swap_languages" = "Swap languages";
+"action_swap_unavailable" = "Swap unavailable";
+"action_grant_permission" = "Grant / Open System Settings";
+"action_quit" = "Quit Ghostwriter";
+"action_show_window" = "Show Ghostwriter (%@)";
+
+/* Dynamic Actions */
+"action_translate_and_insert" = "Translate & Insert";
+"action_improve_and_insert" = "Improve & Insert";
+"action_write_and_insert" = "Write & Insert";
+
+/* Prompt Mode */
+"action_prompt_mode" = "Prompt";
+"action_prompt_mode_help" = "Treat the input as an instruction and write the result in the target language (⌘P)";
+"placeholder_prompt" = "Describe what to write...";
+"status_generating" = "Writing in %@...";
+
+/* Placeholders */
+"placeholder_translate" = "Type in %@ or any language...";
+"placeholder_improve" = "Type or paste text to improve in %@...";
+"placeholder_shortcut_hint" = "Press Return for a new line, ⌘⏎ to insert";
+
+/* Statuses */
+"status_translating" = "Translating to %@...";
+"status_improving" = "Improving text in %@...";
+
+/* Languages */
+"lang_auto" = "Auto-Detect";
+"lang_pt_br" = "Portuguese (BR)";
+"lang_pt_pt" = "Portuguese (PT)";
+"lang_en_us" = "English (US)";
+"lang_en_gb" = "English (UK)";
+"lang_es_es" = "Spanish (ES)";
+"lang_es_la" = "Spanish (LatAm)";
+"lang_fr_fr" = "French (FR)";
+"lang_fr_ca" = "French (CA)";
+"lang_de_de" = "German (DE)";
+"lang_it_it" = "Italian (IT)";
+"lang_ja_jp" = "Japanese";
+"lang_zh_cn" = "Chinese (Simplified)";
+"lang_zh_tw" = "Chinese (Traditional)";
+"lang_ru_ru" = "Russian";
+"lang_ko_ko" = "Korean";
+"lang_nl_nl" = "Dutch";
+
+/* Language Tones */
+"tone_formal" = "Formal";
+"tone_informal" = "Informal";
+"tone_concise" = "Concise & Direct";
+"tone_friendly" = "Warm & Friendly";
+"tone_academic" = "Academic & Technical";
+
+/* CLI Providers */
+"provider_agy" = "Antigravity (agy)";
+"provider_claude" = "Claude (claude)";
+"provider_opencode" = "OpenCode (opencode)";
+"provider_custom" = "Custom CLI";
+
+/* Settings Tabs & Titles */
+"tab_cli_tool" = "CLI Tool";
+"tab_defaults" = "Defaults";
+"tab_permissions" = "Permissions";
+"section_default_selection" = "Default Selection";
+"section_behavior" = "Behaviour";
+"section_configuration" = "%@ Configuration";
+"label_default_source" = "Default Source Language";
+"label_default_target" = "Default Target Language";
+"label_default_tone" = "Default Tone";
+"label_auto_paste" = "Auto-paste into previous application";
+"label_auto_paste_description" = "When enabled, Ghostwriter copies the translated text to the clipboard and simulates ⌘V into the frontmost app.";
+"label_global_hotkey" = "Global Hotkey";
+"label_global_hotkey_description" = "Always active across all macOS apps";
+"label_accessibility_permission" = "Accessibility Permission";
+"label_accessibility_description" = "Required for Ghostwriter to automatically paste the translated text into other apps.";
+"label_permission_granted" = "Permission Granted";
+"label_permission_required" = "Permission Required";
+"label_binary_path" = "Binary Path";
+"label_arguments" = "Arguments ({prompt} will be replaced)";
+"label_custom_path_override" = "Custom path override (optional)";
+"label_detected_path" = "Detected: %@";
+"label_cli_not_found" = "'%@' not found automatically in PATH";
+
+/* Errors */
+"error_cli_not_found" = "Command '%@' was not found. Please install it or set its full path in Settings.";
+"error_cli_execution_failed" = "CLI execution failed: %@";
+"error_empty_response" = "CLI returned an empty translation.";

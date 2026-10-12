@@ -1,0 +1,98 @@
+/*
+  Localizable.strings (es-419)
+  ghostwriter
+*/
+
+/* General */
+"app_name" = "Ghostwriter";
+
+/* Action shortcuts */
+"action_insert" = "Insertar";
+"action_close" = "Cerrar";
+"action_settings" = "Preferencias (prefs.toml)";
+"action_swap_languages" = "Intercambiar idiomas";
+"action_swap_unavailable" = "Intercambio no disponible";
+"action_grant_permission" = "Conceder / Abrir Configuración del Sistema";
+"action_quit" = "Salir de Ghostwriter";
+"action_show_window" = "Mostrar Ghostwriter (%@)";
+
+/* Dynamic Actions */
+"action_translate_and_insert" = "Traducir e insertar";
+"action_improve_and_insert" = "Mejorar e insertar";
+"action_write_and_insert" = "Escribir e insertar";
+
+/* Prompt Mode */
+"action_prompt_mode" = "Prompt";
+"action_prompt_mode_help" = "Trata la entrada como una instrucción y escribe el resultado en el idioma de destino (⌘P)";
+"placeholder_prompt" = "Describe qué escribir...";
+"status_generating" = "Escribiendo en %@...";
+
+/* Placeholders */
+"placeholder_translate" = "Escribe en %@ o en cualquier idioma...";
+"placeholder_improve" = "Escribe o pega el texto a mejorar en %@...";
+"placeholder_shortcut_hint" = "Return para salto de línea, ⌘⏎ para insertar";
+
+/* Statuses */
+"status_translating" = "Traduciendo al %@...";
+"status_improving" = "Mejorando el texto en %@...";
+
+/* Languages */
+"lang_auto" = "Detección automática";
+"lang_pt_br" = "Portugués (Brasil)";
+"lang_pt_pt" = "Portugués (Portugal)";
+"lang_en_us" = "Inglés (Estados Unidos)";
+"lang_en_gb" = "Inglés (Reino Unido)";
+"lang_es_es" = "Español (España)";
+"lang_es_la" = "Español (Latinoamérica)";
+"lang_fr_fr" = "Francés (Francia)";
+"lang_fr_ca" = "Francés (Canadá)";
+"lang_de_de" = "Alemán";
+"lang_it_it" = "Italiano";
+"lang_ja_jp" = "Japonés";
+"lang_zh_cn" = "Chino (simplificado)";
+"lang_zh_tw" = "Chino (tradicional)";
+"lang_ru_ru" = "Ruso";
+"lang_ko_ko" = "Coreano";
+"lang_nl_nl" = "Neerlandés";
+
+/* Language Tones */
+"tone_formal" = "Formal";
+"tone_informal" = "Informal";
+"tone_concise" = "Conciso y directo";
+"tone_friendly" = "Cálido y amistoso";
+"tone_academic" = "Académico y técnico";
+
+/* CLI Providers */
+"provider_agy" = "Antigravity (agy)";
+"provider_claude" = "Claude (claude)";
+"provider_opencode" = "OpenCode (opencode)";
+"provider_custom" = "CLI personalizado";
+
+/* Settings Tabs & Titles */
+"tab_cli_tool" = "Herramienta CLI";
+"tab_defaults" = "Predeterminados";
+"tab_permissions" = "Permisos";
+"section_default_selection" = "Selección predeterminada";
+"section_behavior" = "Comportamiento";
+"section_configuration" = "Configuración de %@";
+"label_default_source" = "Idioma de origen predeterminado";
+"label_default_target" = "Idioma de destino predeterminado";
+"label_default_tone" = "Tono predeterminado";
+"label_auto_paste" = "Pegar automáticamente en la aplicación anterior";
+"label_auto_paste_description" = "Cuando está activado, Ghostwriter copia el texto traducido al portapapeles y simula ⌘V en la aplicación activa.";
+"label_global_hotkey" = "Atajo global";
+"label_global_hotkey_description" = "Siempre activo en todas las apps de macOS";
+"label_accessibility_permission" = "Permiso de accesibilidad";
+"label_accessibility_description" = "Necesario para que Ghostwriter pegue automáticamente el texto traducido en otras apps.";
+"label_permission_granted" = "Permiso concedido";
+"label_permission_required" = "Permiso requerido";
+"label_binary_path" = "Ruta del ejecutable";
+"label_arguments" = "Argumentos ({prompt} se sustituirá)";
+"label_custom_path_override" = "Ruta personalizada (opcional)";
+"label_detected_path" = "Detectado: %@";
+"label_cli_not_found" = "'%@' no se encontró automáticamente en el PATH";
+
+/* Errors */
+"error_cli_not_found" = "No se encontró el comando '%@'. Instálalo o configura su ruta completa en Configuración.";
+"error_cli_execution_failed" = "Error en la ejecución del CLI: %@";
+"error_empty_response" = "El CLI devolvió una respuesta vacía.";

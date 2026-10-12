@@ -1,0 +1,84 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background: diagonal indigo -> deep violet -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7B6CF6"/>
+      <stop offset="0.52" stop-color="#5646D8"/>
+      <stop offset="1" stop-color="#2E2A6B"/>
+    </linearGradient>
+    <!-- Soft aurora glow bottom-right -->
+    <radialGradient id="aurora" cx="0.82" cy="0.88" r="0.55">
+      <stop offset="0" stop-color="#5AC8FF" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#5AC8FF" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Glow behind the bubble -->
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Top-left glass sheen on squircle -->
+    <radialGradient id="sheen" cx="0.22" cy="0.12" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.14"/>
+      <stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Bubble body -->
+    <linearGradient id="bubble" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E7EAF9"/>
+    </linearGradient>
+    <!-- Ghost ink -->
+    <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#473E9E"/>
+      <stop offset="1" stop-color="#312A6E"/>
+    </linearGradient>
+    <filter id="blurS" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="blurB" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <!-- 4-point sparkle centered at 0,0 -->
+    <path id="sparkle" d="M 0 -1 Q 0.16 -0.16 1 0 Q 0.16 0.16 0 1 Q -0.16 0.16 -1 0 Q -0.16 -0.16 0 -1 Z"/>
+  </defs>
+
+  <!-- Squircle drop shadow -->
+  <rect x="100" y="118" width="824" height="824" rx="186" fill="#140F3A" opacity="0.45" filter="url(#blurS)"/>
+
+  <!-- Squircle background -->
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#bg)"/>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#aurora)"/>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#sheen)"/>
+
+  <!-- Background sparkles -->
+  <use href="#sparkle" transform="translate(788 264) scale(40)" fill="#FFFFFF" opacity="0.95"/>
+  <use href="#sparkle" transform="translate(788 264) scale(14) translate(58 44)" fill="#FFFFFF" opacity="0.7"/>
+  <use href="#sparkle" transform="translate(226 316) scale(24)" fill="#9BEBFF" opacity="0.85"/>
+  <use href="#sparkle" transform="translate(822 566) scale(16)" fill="#FFFFFF" opacity="0.65"/>
+
+  <!-- Halo behind bubble -->
+  <ellipse cx="512" cy="520" rx="360" ry="330" fill="url(#halo)"/>
+
+  <g transform="translate(0 -8)">
+    <!-- Bubble drop shadow -->
+    <path d="M 362 350 L 467 350 L 512 296 L 557 350 L 662 350 A 110 110 0 0 1 772 460 L 772 620 A 110 110 0 0 1 662 730 L 362 730 A 110 110 0 0 1 252 620 L 252 460 A 110 110 0 0 1 362 350 Z"
+          transform="translate(0 18)" fill="#1B1550" opacity="0.5" filter="url(#blurB)"/>
+
+    <!-- Speech bubble with upward caret arrow -->
+    <path d="M 362 350 L 467 350 L 512 296 L 557 350 L 662 350 A 110 110 0 0 1 772 460 L 772 620 A 110 110 0 0 1 662 730 L 362 730 A 110 110 0 0 1 252 620 L 252 460 A 110 110 0 0 1 362 350 Z"
+          fill="url(#bubble)" stroke="#3B3480" stroke-opacity="0.08" stroke-width="3"/>
+
+    <!-- Ghost + text (optically centered) -->
+    <g transform="translate(0 10)">
+      <path d="M 305 610 L 305 545 A 100 100 0 0 1 505 545 L 505 610 A 25 25 0 0 1 455 610 A 25 25 0 0 1 405 610 A 25 25 0 0 1 355 610 A 25 25 0 0 1 305 610 Z"
+            fill="url(#ink)"/>
+      <ellipse cx="370" cy="542" rx="16" ry="21" fill="#FFFFFF"/>
+      <ellipse cx="440" cy="542" rx="16" ry="21" fill="#FFFFFF"/>
+      <path d="M 380 580 Q 405 600 430 580" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+
+      <!-- Text lines -->
+      <rect x="560" y="490" width="158" height="42" rx="21" fill="#3B3480" opacity="0.92"/>
+      <rect x="560" y="562" width="118" height="42" rx="21" fill="#3B3480" opacity="0.62"/>
+    </g>
+  </g>
+</svg>

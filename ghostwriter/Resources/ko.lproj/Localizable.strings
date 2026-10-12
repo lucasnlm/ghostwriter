@@ -1,0 +1,98 @@
+/*
+  Localizable.strings (ko)
+  ghostwriter
+*/
+
+/* General */
+"app_name" = "Ghostwriter";
+
+/* Action shortcuts */
+"action_insert" = "삽입";
+"action_close" = "닫기";
+"action_settings" = "환경설정 (prefs.toml)";
+"action_swap_languages" = "언어 전환";
+"action_swap_unavailable" = "전환할 수 없음";
+"action_grant_permission" = "허용 / 시스템 설정 열기";
+"action_quit" = "Ghostwriter 종료";
+"action_show_window" = "Ghostwriter 보기 (%@)";
+
+/* Dynamic Actions */
+"action_translate_and_insert" = "번역 후 삽입";
+"action_improve_and_insert" = "개선 후 삽입";
+"action_write_and_insert" = "작성 후 삽입";
+
+/* Prompt Mode */
+"action_prompt_mode" = "프롬프트";
+"action_prompt_mode_help" = "입력을 지시문으로 취급하여 대상 언어로 결과를 작성합니다 (⌘P)";
+"placeholder_prompt" = "작성할 내용을 설명하세요...";
+"status_generating" = "%@(으)로 작성 중...";
+
+/* Placeholders */
+"placeholder_translate" = "%@ 또는 다른 언어로 입력...";
+"placeholder_improve" = "%@(으)로 개선할 텍스트를 입력하거나 붙여넣으세요...";
+"placeholder_shortcut_hint" = "Return: 새 줄, ⌘⏎: 삽입";
+
+/* Statuses */
+"status_translating" = "%@(으)로 번역 중...";
+"status_improving" = "%@ 텍스트 개선 중...";
+
+/* Languages */
+"lang_auto" = "자동 감지";
+"lang_pt_br" = "포르투갈어(브라질)";
+"lang_pt_pt" = "포르투갈어(포르투갈)";
+"lang_en_us" = "영어(미국)";
+"lang_en_gb" = "영어(영국)";
+"lang_es_es" = "스페인어(스페인)";
+"lang_es_la" = "스페인어(라틴아메리카)";
+"lang_fr_fr" = "프랑스어(프랑스)";
+"lang_fr_ca" = "프랑스어(캐나다)";
+"lang_de_de" = "독일어";
+"lang_it_it" = "이탈리아어";
+"lang_ja_jp" = "일본어";
+"lang_zh_cn" = "중국어(간체)";
+"lang_zh_tw" = "중국어(번체)";
+"lang_ru_ru" = "러시아어";
+"lang_ko_ko" = "한국어";
+"lang_nl_nl" = "네덜란드어";
+
+/* Language Tones */
+"tone_formal" = "격식체";
+"tone_informal" = "비격식체";
+"tone_concise" = "간결하고 직설적";
+"tone_friendly" = "따뜻하고 친근함";
+"tone_academic" = "학술적·기술적";
+
+/* CLI Providers */
+"provider_agy" = "Antigravity (agy)";
+"provider_claude" = "Claude (claude)";
+"provider_opencode" = "OpenCode (opencode)";
+"provider_custom" = "사용자 지정 CLI";
+
+/* Settings Tabs & Titles */
+"tab_cli_tool" = "CLI 도구";
+"tab_defaults" = "기본값";
+"tab_permissions" = "권한";
+"section_default_selection" = "기본 선택";
+"section_behavior" = "동작";
+"section_configuration" = "%@ 설정";
+"label_default_source" = "기본 원본 언어";
+"label_default_target" = "기본 대상 언어";
+"label_default_tone" = "기본 톤";
+"label_auto_paste" = "이전 앱에 자동으로 붙여넣기";
+"label_auto_paste_description" = "켜면 Ghostwriter가 번역된 텍스트를 클립보드에 복사하고 최전면 앱에 ⌘V를 시뮬레이션합니다.";
+"label_global_hotkey" = "전역 단축키";
+"label_global_hotkey_description" = "모든 macOS 앱에서 항상 활성화됨";
+"label_accessibility_permission" = "접근성 권한";
+"label_accessibility_description" = "Ghostwriter가 번역된 텍스트를 다른 앱에 자동으로 붙여넣는 데 필요합니다.";
+"label_permission_granted" = "권한 허용됨";
+"label_permission_required" = "권한 필요";
+"label_binary_path" = "실행 파일 경로";
+"label_arguments" = "인수({prompt}은(는) 대체됨)";
+"label_custom_path_override" = "사용자 지정 경로(선택 사항)";
+"label_detected_path" = "감지됨: %@";
+"label_cli_not_found" = "'%@'을(를) PATH에서 자동으로 찾지 못했습니다";
+
+/* Errors */
+"error_cli_not_found" = "'%@' 명령을 찾을 수 없습니다. 설치하거나 설정에서 전체 경로를 지정하세요.";
+"error_cli_execution_failed" = "CLI 실행 실패: %@";
+"error_empty_response" = "CLI가 빈 응답을 반환했습니다.";
