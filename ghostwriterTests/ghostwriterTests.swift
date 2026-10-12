@@ -6,7 +6,7 @@
 import XCTest
 import SwiftUI
 import AppKit
-@testable import ghostwriter
+@testable import Ghostwriter
 
 final class ghostwriterTests: XCTestCase {
 
